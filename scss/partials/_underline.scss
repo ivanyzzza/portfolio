@@ -1,0 +1,19 @@
+.underline{
+    display: inline-block;
+    position:relative;
+}
+
+.underline::before{
+    content:"";
+    position: absolute;
+    left:0;
+    bottom: 0;
+    width: 0%;
+    height:2px;
+    background-color: #C3E5EE;
+    transition:width 0.2s ease-out;
+}
+
+.underline:hover::before{
+    width:100%;
+}

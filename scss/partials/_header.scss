@@ -1,0 +1,26 @@
+header{
+    display: flex;
+    justify-content: center;
+    width:100%;
+    background-color:#354953;
+    font-size: 22px;
+    nav {
+        margin: 10px 50px 10px 50px;
+        padding:20px 0px;
+        ul li {
+            list-style-type: none;
+            letter-spacing: .5px;
+            display: inline-block;
+            padding: 0px 50px 0 50px;
+            a{
+                color:rgb(255, 255, 255);
+                text-decoration: none;
+                padding:5px;
+                transition: 0.3s ease-in-out;
+            }
+            a:hover{
+                color:#C3E5EE;
+            }
+        }
+    }
+}

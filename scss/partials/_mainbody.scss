@@ -1,0 +1,330 @@
+
+#pocetna{
+    width:100%;
+    height: 400px;
+    background-image: url(../../img/pozadina-main.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color:$color1;
+    border-bottom:solid 5px white;
+    border-top:solid 5px white;
+    display: flex;
+    justify-content: space-around;
+    #pocetna-img-holder{
+        padding-top:80px;
+        img{
+            width: 500px;
+        }
+    }
+    #pocetna-holder{
+        padding-top:120px;
+        h1{
+            font-size:35px;
+        }
+        span{
+            font-size: 65px;
+            text-decoration: underline;
+            letter-spacing: 8px;
+            margin-bottom:10px;
+        }
+        p{
+            margin-top:25px;
+            font-size:20px;
+        }
+    }
+}
+
+#about{
+    width:100%;
+    background-color: $color1;
+    color:$color2;
+    border-bottom:solid 5px white;
+    #ab-text-holder{
+        display: flex;
+        justify-content:space-around ;
+        padding-top:120px;
+        padding-bottom: 120px;
+        width:100%;
+        text-align: left;
+        h3{
+            font-size: 45px;
+            text-decoration: underline;
+        }
+        p{
+            font-size: 18px;
+            margin-top: 25px;
+        }
+        
+        #ab-img-holder1 {
+            img{
+            width: 400px;}
+            
+        }
+    }
+    #about-card-holder{
+        width: 70%;
+        margin: 0 auto;
+        padding-bottom: 120px;
+        #about-card{
+            display:flex;
+            justify-content: center;
+            padding-bottom:100px;
+            padding-top: 100px;
+            background-color: $color2;
+            color: $color1;
+            border-radius: $border-r;
+            #ab-img-holder2{
+                height: 500px;
+                width:max-content;
+                outline: $color1 solid 3px;
+                outline-offset: 3px;
+                border-radius: $border-r;
+                margin: 0px auto;
+                img{
+                    height: 100%;
+                    border-radius: $border-r;
+                }
+            }
+            #ab-img-text{
+                text-align: center;
+                width: 500px;
+                margin-left: 50px;
+                margin: 0px auto;
+                p{
+                    margin-top: 10px;
+                    margin-bottom: 30px;
+                    font-size: 20px;
+                }
+                h2{
+                    text-decoration: underline;
+                    font-size: 35px;
+                    letter-spacing: 3px;
+                }
+            }
+        }
+    }
+}
+
+#skills{
+    width:100%;
+    text-align: center;
+    background-color: $color2;
+    border-bottom: 5px solid white;
+    .polje{
+        @extend %polje;
+    }
+    .naslov{
+        @extend %naslov;
+       }
+    #skills-holder{
+        padding-top: 50px;
+        padding-bottom: 60px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #services{
+        padding-top: 50px;
+        #services-holder{
+            @extend %servis;
+        }
+    }
+    #stats{
+        display: block;
+        text-align: center;
+        display: flex;
+        justify-content: space-evenly;
+        color: $color1;
+        font-size: 20px;
+        .st-wrap{
+            width: 22%;
+            .st-stats-wrap{
+                width: 100%;
+                height: 20px;
+                position: relative;
+                background-color: #ffffff;
+                border-radius: $border-r;
+                .st-stat{
+                    width: 95%;
+                    height: 100%;
+                    background-color: $color1;
+                    border-radius: $border-r;
+                }
+            }
+        }
+    }
+}
+
+#skills{ #stats{
+    .st-wrap:nth-child(2){
+        .st-stats-wrap{
+            .st-stat{
+                width: 80%;
+                }
+            }
+        }
+    }
+}
+
+#skills{ #stats{
+    .st-wrap:nth-child(3){
+        .st-stats-wrap{
+            .st-stat{
+                width: 70%;
+                }
+            }
+        }
+    }
+}
+
+#skills{ #stats{
+    .st-wrap:nth-child(4){
+        .st-stats-wrap{
+            .st-stat{
+                width: 90%;
+                }
+            }
+        }
+    }
+}
+
+#projects{
+    text-align: center;
+    background-color: $color1;
+    border-bottom: 5px solid white;
+    padding-top: 20px;
+    #naslov2{
+        color:$color2;
+        font-size: 45px;
+        text-decoration: underline;
+    }
+    #projects-holder{
+        padding-top:50px;
+        padding-bottom:50px;
+        display: flex;
+        justify-content: space-around;
+        color:$color1;
+        .projekat-polje{
+            width: max-content;
+            text-align: center;
+            outline: solid 3px $color2;
+            outline-offset: 3px;
+            background-color: $color2;
+            border-radius: $border-r;
+            
+            img{
+                width:500px;
+                margin-top: 10px;;
+                border: solid 3px $color1;
+                margin:10px 10px 0px 10px;
+                border-radius: $border-r;
+            }
+        }
+    }
+}
+
+#contact {
+        background-color: $color2;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        background-color: $color2;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        padding-top: 50px;
+        #contact-holder{
+            width:30%;
+            padding:0px 0px 50px 0px;
+            margin: 0 auto;
+            h3{
+                padding: 0px 0px 20px 0px;
+                font-size: 45px;
+                text-decoration: underline;
+                color: $color1;
+            }
+            #contact-form-holder{
+                background-color: $color1;
+                outline:3px solid $color1;
+                outline-offset: 3px;
+                padding:10px;
+                border-radius: $border-r;
+                label {
+                    display: block;
+                    margin-bottom: 8px;
+                    color: $color2;
+                  }
+                input,textarea {
+                    width: 100%;
+                    padding: 8px;
+                    margin-bottom: 16px;
+                    box-sizing: border-box;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    resize: none;
+                    
+                 }
+                 button {
+                    background-color: white;
+                    color: #fff;
+                    padding: 10px;
+                    border: none;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    color:$color1;
+                  }
+                  button:hover {
+                    background-color: $color2;
+                  }
+            }
+
+        }
+
+        #contact-links-holder{
+            display: flex;
+            flex-direction: column;
+            width:30%;
+            align-items: center;
+            margin: 0 auto;
+            @extend %contact;
+            a{
+                margin-top: 25px;
+                margin-bottom:25px;
+                text-decoration: none;
+                color: #C3E5EE;
+                width: 60%;
+                padding: 20px;
+                background-color: $color1;
+                border-radius: $border-r;
+                outline: 3px solid $color1;
+                outline-offset: 1px;
+                transition: 0.2s ease-out;
+            }
+        }
+
+        
+}
+
+footer{
+    background-color: $color1;
+    border-top: 5px solid white;
+    text-decoration: none;
+    color: #C3E5EE;
+    font-size: 25px;
+    .footer-drzac{
+        padding: 15px;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        .sadrzaj{
+            width: 50%;
+            .links{
+                a{
+                    text-decoration: none;
+                    color: #C3E5EE;
+                }
+            }
+        }
+    }
+}

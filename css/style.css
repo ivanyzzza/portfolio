@@ -1,0 +1,392 @@
+header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #354953;
+  font-size: 22px;
+}
+header nav {
+  margin: 10px 50px 10px 50px;
+  padding: 20px 0px;
+}
+header nav ul li {
+  list-style-type: none;
+  letter-spacing: 0.5px;
+  display: inline-block;
+  padding: 0px 50px 0 50px;
+}
+header nav ul li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 5px;
+  transition: 0.3s ease-in-out;
+}
+header nav ul li a:hover {
+  color: #C3E5EE;
+}
+
+.underline {
+  display: inline-block;
+  position: relative;
+}
+
+.underline::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #C3E5EE;
+  transition: width 0.2s ease-out;
+}
+
+.underline:hover::before {
+  width: 100%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Fredoka", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  background-color: white;
+}
+
+#pocetna {
+  width: 100%;
+  height: 400px;
+  background-image: url(../img/pozadina-main.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #354953;
+  border-bottom: solid 5px white;
+  border-top: solid 5px white;
+  display: flex;
+  justify-content: space-around;
+}
+#pocetna #pocetna-img-holder {
+  padding-top: 80px;
+}
+#pocetna #pocetna-img-holder img {
+  width: 500px;
+}
+#pocetna #pocetna-holder {
+  padding-top: 120px;
+}
+#pocetna #pocetna-holder h1 {
+  font-size: 35px;
+}
+#pocetna #pocetna-holder span {
+  font-size: 65px;
+  text-decoration: underline;
+  letter-spacing: 8px;
+  margin-bottom: 10px;
+}
+#pocetna #pocetna-holder p {
+  margin-top: 25px;
+  font-size: 20px;
+}
+
+#about {
+  width: 100%;
+  background-color: #354953;
+  color: #C3E5EE;
+  border-bottom: solid 5px white;
+}
+#about #ab-text-holder {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  width: 100%;
+  text-align: left;
+}
+#about #ab-text-holder h3 {
+  font-size: 45px;
+  text-decoration: underline;
+}
+#about #ab-text-holder p {
+  font-size: 18px;
+  margin-top: 25px;
+}
+#about #ab-text-holder #ab-img-holder1 img {
+  width: 400px;
+}
+#about #about-card-holder {
+  width: 70%;
+  margin: 0 auto;
+  padding-bottom: 120px;
+}
+#about #about-card-holder #about-card {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 100px;
+  padding-top: 100px;
+  background-color: #C3E5EE;
+  color: #354953;
+  border-radius: 10px;
+}
+#about #about-card-holder #about-card #ab-img-holder2 {
+  height: 500px;
+  width: -moz-max-content;
+  width: max-content;
+  outline: #354953 solid 3px;
+  outline-offset: 3px;
+  border-radius: 10px;
+  margin: 0px auto;
+}
+#about #about-card-holder #about-card #ab-img-holder2 img {
+  height: 100%;
+  border-radius: 10px;
+}
+#about #about-card-holder #about-card #ab-img-text {
+  text-align: center;
+  width: 500px;
+  margin-left: 50px;
+  margin: 0px auto;
+}
+#about #about-card-holder #about-card #ab-img-text p {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+#about #about-card-holder #about-card #ab-img-text h2 {
+  text-decoration: underline;
+  font-size: 35px;
+  letter-spacing: 3px;
+}
+
+#skills {
+  width: 100%;
+  text-align: center;
+  background-color: #C3E5EE;
+  border-bottom: 5px solid white;
+}
+#skills #skills-holder {
+  padding-top: 50px;
+  padding-bottom: 60px;
+  display: flex;
+  justify-content: space-evenly;
+}
+#skills #services {
+  padding-top: 50px;
+}
+#skills #stats {
+  display: block;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  color: #354953;
+  font-size: 20px;
+}
+#skills #stats .st-wrap {
+  width: 22%;
+}
+#skills #stats .st-wrap .st-stats-wrap {
+  width: 100%;
+  height: 20px;
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+#skills #stats .st-wrap .st-stats-wrap .st-stat {
+  width: 95%;
+  height: 100%;
+  background-color: #354953;
+  border-radius: 10px;
+}
+
+#skills #stats .st-wrap:nth-child(2) .st-stats-wrap .st-stat {
+  width: 80%;
+}
+
+#skills #stats .st-wrap:nth-child(3) .st-stats-wrap .st-stat {
+  width: 70%;
+}
+
+#skills #stats .st-wrap:nth-child(4) .st-stats-wrap .st-stat {
+  width: 90%;
+}
+
+#projects {
+  text-align: center;
+  background-color: #354953;
+  border-bottom: 5px solid white;
+  padding-top: 20px;
+}
+#projects #naslov2 {
+  color: #C3E5EE;
+  font-size: 45px;
+  text-decoration: underline;
+}
+#projects #projects-holder {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: space-around;
+  color: #354953;
+}
+#projects #projects-holder .projekat-polje {
+  width: -moz-max-content;
+  width: max-content;
+  text-align: center;
+  outline: solid 3px #C3E5EE;
+  outline-offset: 3px;
+  background-color: #C3E5EE;
+  border-radius: 10px;
+}
+#projects #projects-holder .projekat-polje img {
+  width: 500px;
+  margin-top: 10px;
+  border: solid 3px #354953;
+  margin: 10px 10px 0px 10px;
+  border-radius: 10px;
+}
+
+#contact {
+  background-color: #C3E5EE;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  background-color: #C3E5EE;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding-top: 50px;
+}
+#contact #contact-holder {
+  width: 30%;
+  padding: 0px 0px 50px 0px;
+  margin: 0 auto;
+}
+#contact #contact-holder h3 {
+  padding: 0px 0px 20px 0px;
+  font-size: 45px;
+  text-decoration: underline;
+  color: #354953;
+}
+#contact #contact-holder #contact-form-holder {
+  background-color: #354953;
+  outline: 3px solid #354953;
+  outline-offset: 3px;
+  padding: 10px;
+  border-radius: 10px;
+}
+#contact #contact-holder #contact-form-holder label {
+  display: block;
+  margin-bottom: 8px;
+  color: #C3E5EE;
+}
+#contact #contact-holder #contact-form-holder input, #contact #contact-holder #contact-form-holder textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: none;
+}
+#contact #contact-holder #contact-form-holder button {
+  background-color: white;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #354953;
+}
+#contact #contact-holder #contact-form-holder button:hover {
+  background-color: #C3E5EE;
+}
+#contact #contact-links-holder {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  align-items: center;
+  margin: 0 auto;
+}
+#contact #contact-links-holder a {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  text-decoration: none;
+  color: #C3E5EE;
+  width: 60%;
+  padding: 20px;
+  background-color: #354953;
+  border-radius: 10px;
+  outline: 3px solid #354953;
+  outline-offset: 1px;
+  transition: 0.2s ease-out;
+}
+
+footer {
+  background-color: #354953;
+  border-top: 5px solid white;
+  text-decoration: none;
+  color: #C3E5EE;
+  font-size: 25px;
+}
+footer .footer-drzac {
+  padding: 15px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+footer .footer-drzac .sadrzaj {
+  width: 50%;
+}
+footer .footer-drzac .sadrzaj .links a {
+  text-decoration: none;
+  color: #C3E5EE;
+}
+
+#skills .naslov {
+  font-size: 45px;
+  color: #354953;
+  padding-top: 20px;
+  text-decoration: underline;
+}
+
+#skills #services #services-holder {
+  padding-top: 50px;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#skills .polje {
+  border-radius: 10px;
+  width: 22%;
+  text-align: center;
+  border: 2px solid #354953;
+  background-color: #354953;
+  color: #C3E5EE;
+  outline: 3px solid #354953;
+  outline-offset: 3px;
+}
+#skills .polje h3 {
+  font-size: 30px;
+  padding-top: 30px;
+}
+#skills .polje i {
+  font-size: 50px;
+  padding-top: 30px;
+}
+#skills .polje p {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+#contact #contact-links-holder a:hover {
+  background-color: #C3E5EE;
+  color: #354953;
+}/*# sourceMappingURL=style.css.map */

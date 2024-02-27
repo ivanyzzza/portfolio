@@ -1,0 +1,44 @@
+%naslov{
+    font-size:45px;
+    color:#354953;
+    padding-top: 20px;
+    text-decoration: underline;
+}
+
+%servis {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+%polje{
+    border-radius: $border-r;
+    width:22%;
+    text-align: center;
+    border: 2px solid #354953;
+    background-color: #354953;
+    color:#C3E5EE;
+    outline: 3px solid #354953;
+    outline-offset: 3px;
+    h3{
+        font-size: 30px;
+        padding-top: 30px;
+    }
+    i{
+        font-size: 50px;
+        padding-top: 30px;
+    }
+
+    p{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+%contact{
+    a:hover{
+        background-color: $color2;
+        color: $color1;
+    }
+}
